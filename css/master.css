@@ -1,20 +1,34 @@
+/* General */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 body {
-  #background-color: #000000;
-  background-color: #F8D392;
-  background-image: url("../imagenes/g16.png");
-  #background-image: url("../imagenes/bg.jpg");
-  #background-size:  contain;
-  background-repeat: repeat-y;
-  background-blend-mode: soft-light;
+  background-color: #FFFFFF;
+  width: auto;
   font-family: Arial;
   font-size: 20px;
 }
 
+p {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+  p.hsub {
+  font-size: 1.7rem;
+  font-family: Courier;
+  text-align: center;
+  }
+
+  p.leyenda {
+  font-size: 0.8rem;
+  font-style: oblique;
+  }
+
+
 h1 {
   font-size: 4.3rem;
   text-emphasis-style: double-circle;
-  #text-decoration: overline;
-  #text-decoration-style: wavy;
   margin-bottom: -20px;
 }
 
@@ -28,42 +42,177 @@ h3 {
   text-decoration: underline;
 }
 
-h3.prep {
+  h3.prep {
   color: #697C43;
   text-transform: uppercase;
-}
+  }
 
 h4 {
   font-size: 1.3rem;
   text-decoration: underline;
 }
 
-p {
-  font-size: 1.2rem;
-  text-align: justify;
-  text-align-last not(.hsub): left;
+
+/* Maquetado */
+
+main {
+  position: absolute;
+  top: 0;
 }
 
-p.hsub {
-  font-size: 1.7rem;
-  font-family: Courier;
+header {
+  background: linear-gradient(#9eb66e, #2d361a);
+  background-image: url(../imagenes/bg.png);
+  background-size: cover;
+  padding: 15% 10%;
+}
+
+#header-text {
+  box-sizing: border-box;
+  border-style: double;
+  width: 60%;
+  height: 40%;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 0.5% 0;
   text-align: center;
 }
 
-p.leyenda {
-  font-size: 0.rem;
-  font-style: oblique;
-}
-
-img.plato {
+nav {
+  box-sizing: border-box;
+  position: sticky;
   width: 100%;
-  height: auto;
+  top: 0;
+  background-color: #697C43;
 }
 
-img.map {
-  height: 300px;
-  width: auto;
+#menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 50px;
+  margin: auto;
+  position: relative;
 }
+
+  #menu li {
+  float: left;
+  width: 20%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  }
+
+a.bar {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  font-size: 18px;
+}
+
+  a.bar:hover  {
+  background-color: #e74c3c;
+  }
+
+section {
+  float: left;
+  display: block;
+  margin-bottom: 15%;
+  padding: 3.5%;
+  width: 60%;
+}
+
+aside {
+  float: right;
+  display: block;  
+  padding: 3.5%;
+  width: 25%;
+}
+
+footer {
+  clear: both;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 1.5%;
+  background-color: #697C43;
+  text-align: center;
+}
+
+#redes {
+  display: inline-flex;
+  list-style: none;
+}
+
+  ul.sm {
+  box-sizing: border-box;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none; 
+  padding: 0 35%; 
+  margin: 0; 
+  }
+
+  .sm li {
+    height: 100%;
+    bottom: 15%;  
+  }
+
+
+  a.icons {
+  box-sizing: border-box;
+  border-radius: 20%;
+  padding-block-start: 75%;
+  padding-inline: 10%;
+  background-color: #94ad61;
+  }
+
+  a.icons:hover {
+  background-color: #000000;
+  }
+  
+
+  img.icon {
+  max-height: 50px;
+  opacity: 85%;
+  }
+
+.whatsapp {
+  float: right;
+  position: fixed;
+  margin-top: 5%;
+  right: 15px;
+  z-index: 100;
+}
+
+  a.whatsapp{
+  box-sizing: border-box;
+  border-radius: 50%;
+  padding: 15px; 
+  background-color: #000000;
+ 
+  }
+
+  a.whatsapp:hover {
+  background-color: #94ad61;
+  }
+
+  img.sticky  {
+  height: 30px;
+  width: 30px;  
+  }
+
+
+/* Listas */
 
 ul {
   font-size: 1.2rem;
@@ -77,19 +226,17 @@ ol {
   text-align-last: left;
 }
 
-.content {
+
+/* Multimedia */
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+  img.map {
+  height: 300px;
   width: auto;
-  padding: 0 30px 0 310px;
-}
-
-.header {
-  #padding: 70px;
-  text-align: center;
-}
-
-.header-text {
-  padding: 5px;
-  text-align: center;
 }
 
 .yt {
@@ -106,3 +253,6 @@ ol {
   width: 100%;
   height: 100%;
 }
+
+
+
