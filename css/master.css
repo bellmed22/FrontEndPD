@@ -132,7 +132,8 @@ nav {
   flex-basis: 100%;
   flex-wrap: wrap;
   text-align: center;
-text-align-last: center;
+  text-align-last: center;
+  height: 8vh;
   margin: 0;
   padding: 0.5%;
 }
