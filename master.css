@@ -1,0 +1,292 @@
+/* GENERAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+
+@font-face {
+  font-family: 'giveny';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../fonts/giveny.otf") format("otf"), url("../fonts/giveny.otf"); }
+
+
+body {
+  background-color: #fff;
+  margin: 0;
+  font-family: Arial;
+  font-size: 3em;
+}
+
+p {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+  p.leyenda {
+  font-size: 0.9rem;
+  font-style: oblique;
+}
+
+  
+h1 {
+  font-size: 4.5rem;
+  font-family: 'Pathway Gothic One', sans-serif;
+    color: #fff;
+}
+
+h2 {
+  font-family: 'giveny', sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+  h3.prep {
+  color: #697C43;
+  text-transform: uppercase;
+  }
+
+h4 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+
+/* MAQUETADO */
+
+/* Header */
+
+header {
+  background: linear-gradient(#e79e3e, #353330);
+  background-image: url(../imagenes/bg.png);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2.5%;
+}
+
+.header_logo {
+  flex-basis: 30%;
+  padding: 2%;
+}
+
+.header_logo img {
+ width: max-content;
+}
+
+
+.header_text {
+  flex-basis: 50%;
+  flex: 2 1;
+  justify-content: center;
+  font-size: 4.5vw;
+  padding: 0 5%;
+  text-align: center;
+}
+
+.header_sm {
+  display: flex;
+  flex-basis: 30%;
+  justify-items: space-around;
+  align-items: center;
+}
+
+a.icons_hd :hover {
+   background-color: #000000;;
+}
+
+img.icon_hd  {
+  width: 30%;
+  border-radius: 50%;
+  background-color: #ac670e;  
+  opacity: 85%;
+}
+
+
+/* Navigation */ 
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #ac670e;
+}
+
+#menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  text-align: center;
+  text-align-last: center;
+  height: 20%;
+  margin: 0;
+  padding: 0.5%;
+}
+
+#menu li {
+  flex-basis: 10%;
+  display: inline-block;
+  list-style: none;
+  text-transform: uppercase;
+  padding: 0.5% 3%;
+}
+
+a.bar {
+  font-size: 80%;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+  a.bar:hover  {
+    font-weight: 600;
+    color: #000000;
+  }
+
+
+/* CONTENT */
+
+#content {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: space-between;
+  padding: 3.5%;
+}
+
+section {
+  flex-basis: 70%;
+  justify-content: center;
+  padding: 1.5%;
+}
+
+aside { 
+  flex-basis: 25%;
+}
+
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+  bottom: 0;
+  margin-top: 3vh;
+  padding: 3.5%;
+  background-color: #353330;
+  color: #b1aca6;
+  text-align: center;
+}
+
+.location {
+  flex-basis: 30%;
+}
+
+.contact {
+  flex-basis: 30%;
+}
+
+  .contact p, h4 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .contact a {
+    color: #ac670e;
+    font-size: 1rem; 
+    font-weight: 700; 
+    text-decoration: none
+  }
+
+.footer_sm{
+  display: flex;
+  flex-basis: 20%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a.icons_ft :hover {
+  background: #000000;
+}
+
+img.icon_ft  {
+  width: 70%;
+  border-radius: 20%;
+  background-color: #ac670e;  
+  opacity: 85%;
+}
+
+
+.whatsapp {
+  position: fixed;
+	margin-left: 92%;
+	padding: 1%;
+	bottom: 1%;
+  z-index: 100;
+}
+
+   a.whatsapp :hover {
+  background-color: #ac670e;
+  }
+
+  img.sticky  {
+  height: 80%;
+  width: 80%;
+  border-radius: 50%;
+  background-color: #000000;
+  }
+
+
+/* Listas */
+
+ul {
+  font-size: 1.2rem;
+  text-align: justify;
+  text-align-last: left;
+}
+
+ol {
+  font-size: 1.2rem;
+  text-align: justify;
+  text-align-last: left;
+}
+
+
+/* Multimedia */
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+  img.map {
+  height: 34vh;
+  width: auto;
+}
+
+.yt {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
