@@ -2,11 +2,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
 
+@font-face {
+  font-family: 'giveny';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../fonts/giveny.otf") format("otf"), url("../fonts/giveny.otf"); }
+
+
 body {
   background-color: #fff;
   margin: 0;
   font-family: Arial;
-  font-size: 20px;
+  font-size: 3em;
 }
 
 p {
@@ -17,17 +25,19 @@ p {
   p.leyenda {
   font-size: 0.9rem;
   font-style: oblique;
-  }
+}
 
-
+  
 h1 {
-  font-size: 4rem;
+  font-size: 4.5rem;
   font-family: 'Pathway Gothic One', sans-serif;
-  color: #fff;
+    color: #fff;
 }
 
 h2 {
-  font-size: 2rem;
+  font-family: 'giveny', sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
   text-decoration: underline;
 }
 
@@ -64,44 +74,29 @@ header {
 }
 
 .header_logo {
-  flex-basis: 15%;
+  flex-basis: 30%;
   padding: 2%;
 }
 
 .header_logo img {
-  min-width: 130px;
+ width: max-content;
 }
 
 
 .header_text {
-  flex-basis: 60%;
+  flex-basis: 50%;
   flex: 2 1;
+  justify-content: center;
   font-size: 4.5vw;
   text-align: center;
 }
 
 .header_sm {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-basis: 20%;
-  align-self: flex-end;
-}
-
-ul.sm_hd {
-  display: flex;
-  flex: 2 1;
-  flex-basis: 30%;
-  justify-content: space-around;
-  list-style-type: none;
-  margin: 7%;
-  padding: 0;
-}  
-
-ul.sm_hd li {
-  display: inline-block;
-  list-style: none;
-  padding: 5%;
+  justify-items: space-around;
+  align-items: center;
+  padding-inline-start: 15%;
 }
 
 a.icons_hd :hover {
@@ -109,7 +104,7 @@ a.icons_hd :hover {
 }
 
 img.icon_hd  {
-  min-width: 30px;
+  width: 80%;
   border-radius: 50%;
   background-color: #ac670e;  
   opacity: 85%;
@@ -133,7 +128,7 @@ nav {
   flex-wrap: wrap;
   text-align: center;
   text-align-last: center;
-  height: 8vh;
+  height: 20%;
   margin: 0;
   padding: 0.5%;
 }
@@ -147,6 +142,7 @@ nav {
 }
 
 a.bar {
+  font-size: 80%;
   color: #fff;
   text-align: center;
   text-decoration: none;
@@ -188,7 +184,7 @@ footer {
   flex-wrap: wrap;
   bottom: 0;
   margin-top: 3vh;
-  padding: 1.5%;
+  padding: 3.5%;
   background-color: #353330;
   color: #b1aca6;
   text-align: center;
@@ -203,37 +199,22 @@ footer {
 }
 
   .contact p, h4 {
-    font-size: 80%;
+    font-size: 1rem;
     text-align: center;
   }
 
   .contact a {
     color: #ac670e;
-    font-size: 80%; 
+    font-size: 1rem; 
     font-weight: 700; 
     text-decoration: none
   }
 
 .footer_sm{
   display: flex;
-  justify-content: center;
+  flex-basis: 20%;
+  justify-content: space-between;
   align-items: center;
-  flex-basis: 30%;
-}
-
-ul.sm_ft {
-  display: flex;
-  flex: 2 1;
-  flex-basis: 30%;
-  justify-content: space-around;
-  list-style-type: none;
-  padding: 0 35%;
-}  
-
-ul.sm_ft li {
-  display: inline-block;
-  list-style: none;
-  padding: 5%;
 }
 
 a.icons_ft :hover {
@@ -241,8 +222,7 @@ a.icons_ft :hover {
 }
 
 img.icon_ft  {
-  min-width: 30px;
-  max-width: 40px;
+  width: 70%;
   border-radius: 20%;
   background-color: #ac670e;  
   opacity: 85%;
