@@ -218,7 +218,7 @@ footer {
 }
 
 a.icons_ft :hover {
-   background-color: #000000;
+  background: #000000;
 }
 
 img.icon_ft  {
@@ -230,28 +230,22 @@ img.icon_ft  {
 
 
 .whatsapp {
-  float: right;
   position: fixed;
-  margin-top: 85vh;
-  right: 15px;
+	margin-left: 92%;
+	padding: 1%;
+	bottom: 1%;
   z-index: 100;
 }
 
-  a.whatsapp{
-  box-sizing: border-box;
-  border-radius: 50%;
-  padding: 15px;
-  background-color: #000000;
-
-  }
-
-  a.whatsapp:hover {
+   a.whatsapp :hover {
   background-color: #ac670e;
   }
 
   img.sticky  {
-  height: 30px;
-  width: 30px;
+  height: 80%;
+  width: 80%;
+  border-radius: 50%;
+  background-color: #000000;
   }
 
 
@@ -278,7 +272,7 @@ img {
 }
 
   img.map {
-  height: 300px;
+  height: 34vh;
   width: auto;
 }
 
