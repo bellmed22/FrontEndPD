@@ -1,6 +1,6 @@
 /* GENERAL */
 
-@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 
 @font-face {
   font-family: 'giveny';
@@ -31,7 +31,7 @@ h1 {
   display: flex;
   flex-basis: 30%;
   font-size: 4.5rem;
-  font-family: 'Pathway Gothic One', sans-serif;
+  font-family: 'Oswald', sans-serif;
   color: #fff;
   text-align: center;
 }
@@ -78,12 +78,11 @@ img {
 }
 
   img.logo_chico  {
-    width: 20%; 
-    padding: 5% 40% 0 40%;  
+    width: 25%;    
   }
 
 .map {
-  height: 34vh;
+  height: 24vh;
   width: auto;
 }
 
@@ -252,15 +251,30 @@ section {
 aside { 
   flex-basis: 25%;
   margin-top: 2%;
+  font-size: 1rem;
 }
 
-.card {
+.perfil {
   font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;  
   text-align: center;  
   padding: 0 10%;
 }
 
+.container {
+  margin-bottom: 2.5rem;
+}
+
+.row {
+  justify-content: center;
+}
+
+.card {
+  box-sizing: border-box;
+  margin: 0.2em;
+  padding: 0;
+  font-size: 1rem;
+}
 
 /* FOOTER */
 
@@ -271,7 +285,7 @@ footer {
   flex-wrap: wrap;
   flex-direction: row;
   bottom: 0;
-  margin-top: 3vh;
+  margin-top: 1.5rem;
   padding: 3.5%;
   background-color: #353330;
   color: #b1aca6;
@@ -344,6 +358,16 @@ img.icon_ft  {
 
 
 
+
+
+
+
+
+
+
+  
+
+
 /* MEDIA QUERIES */
 
 @media all and (max-width: 700px) {
@@ -366,7 +390,7 @@ img.icon_ft  {
 }
 
 @media all and (min-width: 700px) {
-.card {
+.perfil {
  display: none;
   }
 }
