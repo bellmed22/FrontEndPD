@@ -269,6 +269,11 @@ aside {
   justify-content: center;
 }
 
+.row img {
+  border-top-right-radius: 20%;
+  border-bottom-left-radius:  20%;
+  padding: 0.5rem;
+}
 
 .card {
   box-sizing: border-box;
@@ -284,7 +289,6 @@ aside {
   transform: scale(1.02);
   box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
 }
-
 
 .card::before, .card::after {
   position: absolute;
