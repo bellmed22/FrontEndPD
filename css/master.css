@@ -275,8 +275,8 @@ aside {
   padding: 0.5rem;
 }
 
-.card {
-  box-sizing: border-box;
+.col- {
+  box-sizing: border-box; 
   margin: 0.2em;
   padding: 0;
   font-size: 1rem;
