@@ -501,7 +501,7 @@ border-width: 5%;
 border-style: solid;
 } 
 
-.dark img.logo_chico, .header_logo  {
+.dark img.logo_chico {
 border-color: #697C43;
 border-width: 10%;
 border-radius: 50%;
