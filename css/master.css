@@ -478,29 +478,34 @@ img.icon_ft  {
 /* DARK MODE */
  
 .dark {
-    color: #e0dbd3;
-    background-color: #161514;
+  color: #e0dbd3;
+  background-color: #161514;
+}
+
+.dark header {
+color: #e0dbd3;
+background-color: #161514;
 }
 
 .dark h5 {
-  color: #e0dbd3; 
+color: #e0dbd3; 
 }
 
 .dark h3.prep {
-  color: #92a173; 
+color: #92a173; 
 }
 
 .dark img.sticky {
-  border-color: #e79e3e;
-  border-width: 5%;
-  border-style: solid;
+border-color: #e79e3e;
+border-width: 5%;
+border-style: solid;
 } 
 
-.dark img.logo_chico {
-  border-color: #697C43;
-  border-width: 10%;
-  border-radius: 50%;
-  border-style: solid;
+.dark img.logo_chico, .header_logo  {
+border-color: #697C43;
+border-width: 10%;
+border-radius: 50%;
+border-style: solid;
 }
 
 
