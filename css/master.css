@@ -1,5 +1,6 @@
 /* GENERAL */
 
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 
 @font-face {
@@ -7,7 +8,8 @@
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("../fonts/giveny.otf") format("otf"), url("../fonts/giveny.otf"); }
+  src: url("../fonts/giveny.otf") format("otf"), url("../fonts/giveny.otf"); 
+}
 
 
 body {
@@ -49,7 +51,8 @@ h3 {
 }
 
   h3.prep {
-  color: #697C43;
+  color: #697C43;    
+  font-weight: 600;   
   text-transform: uppercase;
   }
 
@@ -80,6 +83,7 @@ img {
   img.logo_chico  {
     width: 25%;    
   }
+
 
 .map {
   height: 24vh;
@@ -175,6 +179,8 @@ img.icon_hd  {
 /* Navigation */ 
 
 nav {
+  display: flex;
+  align-content: center;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -231,6 +237,53 @@ img.navcons  {
   opacity: 70%;
 }
 
+button.toogle_dark {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  height: 3%;
+  margin: 0 1.5%;
+  padding: 0.5%;
+  border-radius: 5%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: 65%; 
+}
+
+
+
+button.toogle_dark:hover { 
+  box-shadow: 0 0.5em 0.5em -0.4em #e79e3e;
+  transform: translateY(-0.25em);
+  cursor: pointer;
+}
+
+
+button.toogle_dark_grafico {
+  width: 75%;
+  height: 50%;
+  margin: auto 1.5%;
+  border-radius: 5%; 
+  background-color: #353330;
+  border-style: none;
+  opacity: 75%; 
+}
+
+button.toogle_dark_grafico:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em #e79e3e;
+  transform: translateY(-0.25em);
+  cursor: pointer;
+}
+
+img.navcons_dm {
+  height: 75%;
+  width: 75%;
+  padding: 0 0.5%;
+  }
+
+
 
 /* CONTENT */
 
@@ -262,7 +315,7 @@ aside {
 }
 
 .container {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.5rem;  
 }
 
 .row {
@@ -284,6 +337,9 @@ aside {
   cursor:pointer;
 }
 
+.card {
+  background-color: inherit;
+}
 
 .card:hover {
   transform: scale(1.02);
@@ -310,41 +366,7 @@ aside {
 .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
   transform: scale3d(1, 1, 1);
 }
-/* FOOTER */
 
-footer {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-  bottom: 0;
-  margin-top: 1.5rem;
-  padding: 3.5%;
-  background-color: #353330;
-  color: #b1aca6;
-  text-align: center;
-}
-
-.location {
-  flex-basis: 30%;
-}
-
-.contact {
-  flex-basis: 30%;
-}
-
-  .contact p, h4 {
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  .contact a {
-    color: #ac670e;
-    font-size: 1rem; 
-    font-weight: 700; 
-    text-decoration: none
-  }
 
 /* FOOTER */
 
@@ -366,6 +388,7 @@ footer {
   flex-basis: 30%;
 }
 
+/* Contacto común 
 .contact {
   flex-basis: 30%;
 }
@@ -380,6 +403,30 @@ footer {
     font-size: 1rem; 
     font-weight: 700; 
     text-decoration: none
+  }
+  */
+
+  button.copyright {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    height: 4%;
+    margin: 0 1.5%;
+    padding: 1.5%;
+    border-radius: 36px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    opacity: 65%;
+  }
+
+  button.copyright:hover {
+    border-color: #697C43;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #92a173;
+    transform: translateY(-0.25em);
+    cursor: pointer;
   }
 
 #footer_sm{
@@ -428,14 +475,34 @@ img.icon_ft  {
 
 
 
+/* DARK MODE */
+ 
+.dark {
+    color: #e0dbd3;
+    background-color: #161514;
+}
 
+.dark h5 {
+  color: #e0dbd3; 
+}
 
+.dark h3.prep {
+  color: #92a173; 
+}
 
+.dark img.sticky {
+  border-color: #e79e3e;
+  border-width: 5%;
+  border-style: solid;
+} 
 
+.dark img.logo_chico {
+  border-color: #697C43;
+  border-width: 10%;
+  border-radius: 50%;
+  border-style: solid;
+}
 
-
-
-  
 
 
 /* MEDIA QUERIES */
@@ -485,14 +552,27 @@ nav {
   }
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 570px) {
   #menu {    
     display: none;
   }
 }
 
-@media all and (min-width: 500px) {
+@media all and (max-width: 570px) {
+  button.toogle_dark {    
+    display: none;
+      }
+}
+
+
+@media all and (min-width: 570px) {
   #menu_grafico {    
+    display: none;
+      }
+}
+
+@media all and (min-width: 570px) {
+  button.toogle_dark_grafico {    
     display: none;
       }
 }
@@ -576,4 +656,10 @@ nav {
   .location {
     width: auto;
 }
+}
+
+@media all and (max-width: 700px) {
+  button.copyright {    
+    font-size: 0.7rem;    
+  }
 }
