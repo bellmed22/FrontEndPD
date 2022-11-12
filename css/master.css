@@ -501,9 +501,9 @@ border-width: 5%;
 border-style: solid;
 } 
 
-.dark img.logo_chico {
+.dark img.logo_chico, .header_logo  {
 border-color: #697C43;
-border-width: 10%;
+border-width: 0.3rem;
 border-radius: 50%;
 border-style: solid;
 }
@@ -619,6 +619,13 @@ nav {
   img.icon_hd {
     width: 60%;
   }
+}
+
+
+@media all and (min-width:700px) {
+  .header_logo {
+    border: none;
+    }
 }
 
 
