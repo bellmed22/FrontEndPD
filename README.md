@@ -15,7 +15,4 @@ Creación de una una página web de recetas
 ### ===============<br />
 ###   Tecnologías
 ### ===============<br />
-**HTML5**
-**CSS3**
-**JS**
-**Bootstrap**
+**HTML5 | CSS3 | JS | Bootstrap**
