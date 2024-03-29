@@ -1,6 +1,6 @@
 # FrontEndPD
 
-*Proyecto para trayecto Fronten de Potrero Digital:
+*Proyecto para trayecto Frontend de Potrero Digital:
 Creación de una una página web de recetas
 
 ![216 Sabores](web_001.jpg)
